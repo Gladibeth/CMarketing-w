@@ -479,6 +479,11 @@ button:focus {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  &.main-cta__btn--left {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
 }
 
 .main-cta__boximg {
@@ -493,7 +498,7 @@ button:focus {
 
 .main-cta__img--two {
   position: absolute;
-  right: -140%;
+  right: -145px;
 }
 
 .main-about {
@@ -653,9 +658,10 @@ textarea {
     resize: none;
     color: $white;
     margin-bottom: 40px;
-    border: 1px solid #307ea5;
+
 
     &:focus {
+      border: 1px solid #307ea5;
       background-color: transparent;
       border-color: transparent;
       box-shadow: 0 0 0 0.2rem transparent;
@@ -666,7 +672,7 @@ textarea {
 
 .main-footer__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 70% 30%;
 }
 
 .main-footer__info ul {
@@ -677,6 +683,7 @@ textarea {
       color: $white;
       font-family: $FiraSans;
       text-decoration: none;
+      font-size: 20px;
 
       &:hover {
         text-decoration: none;
@@ -700,6 +707,7 @@ textarea {
     img {
       width: 20px;
       height: 20px;
+      margin-right: 10px;
     }
   }
 }
@@ -717,10 +725,12 @@ textarea {
   }
 
   a {
-    color: $orange;
+    color: $white;
     text-decoration: none;
     font-family: $FiraSans;
     text-decoration: none;
+    font-weight: 700;
+    margin-right: 5px;
 
     &:hover {
       text-decoration: none;
@@ -729,5 +739,5 @@ textarea {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
 }
