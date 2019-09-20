@@ -351,6 +351,20 @@ button:focus {
       }
     }
   }
+
+  &.main-general__title--footer {
+    p {
+      &:before {
+        font-family: $FiraSans;
+        position: absolute;
+        content: 'Ubicanos';
+        color: $text;
+        font-size: 80px;
+        top: -100%;
+        left: -30%;
+      }
+    }
+  }
 }
 
 .main-services {
@@ -740,4 +754,15 @@ textarea {
 
 footer {
   margin-top: 100px;
+  position: relative;
+}
+
+.main-footer__box {
+  position: relative;
+}
+
+.main-footer__boximg {
+  position: absolute;
+  left: 25%;
+  opacity: 0.2;
 }

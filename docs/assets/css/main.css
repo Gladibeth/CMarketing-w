@@ -704,6 +704,16 @@ button:focus {
   left: -30%;
 }
 
+.main-general__title.main-general__title--footer p:before {
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  content: 'Ubicanos';
+  color: #0e0f3b;
+  font-size: 80px;
+  top: -100%;
+  left: -30%;
+}
+
 .main-services {
   position: relative;
 }
@@ -1055,4 +1065,15 @@ textarea.form-control:focus {
 
 footer {
   margin-top: 100px;
+  position: relative;
+}
+
+.main-footer__box {
+  position: relative;
+}
+
+.main-footer__boximg {
+  position: absolute;
+  left: 25%;
+  opacity: 0.2;
 }
