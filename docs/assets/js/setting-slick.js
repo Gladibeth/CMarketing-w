@@ -129,3 +129,19 @@ $('.main-election__items').slick({
 //     }
 //   ]
 // });
+
+$('.slider-for__team').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav__team'
+});
+$('.slider-nav__team').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for__team',
+  dots: true,
+  focusOnSelect: true
+});
+

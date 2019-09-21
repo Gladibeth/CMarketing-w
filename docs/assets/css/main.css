@@ -349,6 +349,7 @@
 
 body {
   background-color: #161743;
+  font-family: "Fira Sans", sans-serif;
 }
 
 section {
@@ -398,12 +399,8 @@ button:focus {
   transition: .3s ease-in-out;
 }
 
-.navbar .container {
-  padding: 20px 0;
-}
-
 .nav-item {
-  padding: 0 25px;
+  padding: 0 12px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1076,4 +1073,83 @@ footer {
   position: absolute;
   left: 25%;
   opacity: 0.2;
+}
+
+.main-equipo .main__team {
+  display: grid;
+  grid-template-columns: 68% 32%;
+}
+
+.main-equipo .main-content__person {
+  display: grid !important;
+  grid-template-columns: 60% 50%;
+}
+
+.main-equipo .main-content__person .main-content__description {
+  background: #0e0f3b;
+  color: #fff;
+}
+
+.main-equipo .main-content__person .main-content__img {
+  background: #0e0f3b;
+  width: 178px;
+}
+
+.main-equipo .main-content__person .main-content__title {
+  font-size: 25px;
+  margin: 50px 50px 12px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-equipo .main-content__person .main-content__subtitle {
+  margin: 5px 50px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+}
+
+.main-equipo .main-content__person .main-content__subtitle p {
+  color: #fff;
+}
+
+.main-equipo .main-content__person .main-content__subtitle p:nth-child(1) {
+  color: #ee1696;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-equipo .main-content__person .main-content__redes {
+  margin: 5px 20px;
+}
+
+.main-equipo .main-content__person .main-content__redes i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.main-equipo .slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.main-equipo .slick-slide img {
+  display: flex !important;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+  display: block;
+  width: 22rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.main-equipo .slider-nav__team .slick-slide img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.main-equipo :focus {
+  outline: -webkit-focus-ring-color auto 1px;
 }
