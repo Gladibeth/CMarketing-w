@@ -91,12 +91,17 @@ button:focus {
   &.fixed-color {
     color: $black;
     transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+    }
   }
 
   &:hover {
-    color: $black;
+    color: $white;
   }
 }
+
 
 .navbar-brand {
   width: 220px;
@@ -1180,7 +1185,7 @@ textarea {
 }
 
 footer {
-  margin-top: 100px;
+  padding-top: 150px;
   position: relative;
 }
 

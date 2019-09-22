@@ -579,8 +579,12 @@ button:focus {
   transition: 0.3s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-link.fixed-color:hover {
   color: #000;
+}
+
+.nav-link:hover {
+  color: #fff;
 }
 
 .navbar-brand {
@@ -1749,7 +1753,7 @@ textarea.form-control::placeholder {
 }
 
 footer {
-  margin-top: 100px;
+  padding-top: 150px;
   position: relative;
 }
 
