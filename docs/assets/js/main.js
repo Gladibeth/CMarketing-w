@@ -137,4 +137,3 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-new WOW().init();
