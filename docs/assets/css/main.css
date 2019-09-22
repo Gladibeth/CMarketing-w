@@ -448,7 +448,6 @@ body {
 .btn--filled {
   color: #fff;
   background: linear-gradient(45deg, #eb4a82 0%, #5225f8 100%);
-  border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
@@ -1743,7 +1742,7 @@ footer {
 }
 
 .main-equipo .main-content__redes {
-  margin: 5px 20px;
+  margin: 5px 40px;
 }
 
 .main-equipo .main-content__redes i {
@@ -2048,6 +2047,23 @@ form {
   z-index: 2;
 }
 
+.particle-3__team {
+  width: 3rem;
+  left: 85%;
+  top: 80%;
+  position: absolute;
+  transform: rotateZ(50deg);
+  z-index: 2;
+}
+
+.particle-2__team {
+  width: 4rem;
+  left: 85%;
+  top: 45%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-2 {
   width: 3rem;
   left: 33%;
@@ -2088,6 +2104,22 @@ form {
   z-index: 2;
 }
 
+.particle-6__cta {
+  width: 5rem;
+  left: 30%;
+  top: 66%;
+  position: absolute;
+  z-index: 2;
+}
+
+.particle-7__cta {
+  width: 5rem;
+  left: 63%;
+  top: 18%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-4 {
   width: 21rem;
   left: 86%;
@@ -2118,4 +2150,24 @@ label {
   background: -webkit-gradient(linear, left top, left bottom, from(#d34494), to(#732dde));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px !important;
+}
+
+.slick-prev {
+  right: 120% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.slick-next {
+  right: 108% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.main__team {
+  overflow-y: hidden;
 }
