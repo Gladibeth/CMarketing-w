@@ -1334,7 +1334,7 @@ footer {
   }
 
   .main-content__redes {
-    margin: 5px 40px;
+    margin: 5px 20px;
 
     @include respond-to(xs) {
       text-align: center;
@@ -1676,24 +1676,6 @@ form {
   z-index: 2;
 }
 
-.particle-3__team {
-  width: 3rem;
-  left: 85%;
-  top: 80%;
-  position: absolute;
-  transform: rotateZ(50deg);
-  z-index: 2;
-}
-
-.particle-2__team {
-  width: 4rem;
-  left: 85%;
-  top: 45%;
-  position: absolute;
-  z-index: 2;
-}
-
-
 .particle-2 {
   width: 3rem;
   left: 33%;
@@ -1730,22 +1712,6 @@ form {
   width: 5rem;
   left: 80%;
   top: 15%;
-  position: absolute;
-  z-index: 2;
-}
-
-.particle-6__cta {
-  width: 5rem;
-  left: 30%;
-  top: 66%;
-  position: absolute;
-  z-index: 2;
-}
-
-.particle-7__cta {
-  width: 5rem;
-  left: 63%;
-  top: 18%;
   position: absolute;
   z-index: 2;
 }

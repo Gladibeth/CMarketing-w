@@ -48,6 +48,10 @@
   }
 }
 
+button {
+  border: none;
+}
+
 .btn--filled {
   color: $white;
   background: $gradient;
