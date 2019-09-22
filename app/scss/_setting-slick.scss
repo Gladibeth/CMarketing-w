@@ -58,6 +58,12 @@
     left: 9%;
     width: 0%;
 
+    clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+    width: 16px;
+    height: 17px;
+    background: #fff;
+    position: absolute;
+
     @include respond-to(md) {
       left: 45%;
     }
@@ -77,6 +83,8 @@
           opacity: 0.75;
           width: 35px;
           margin: 0;
+
+          
         }
       }
     }

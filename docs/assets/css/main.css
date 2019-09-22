@@ -69,6 +69,11 @@
   bottom: 5%;
   left: 9%;
   width: 0%;
+  clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+  width: 16px;
+  height: 17px;
+  background: #fff;
+  position: absolute;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -372,7 +377,7 @@ button:focus {
 
 .navbar {
   background-color: transparent;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -396,7 +401,7 @@ button:focus {
 .navbar.fixed {
   height: 60px;
   background-color: #fff;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-item {
@@ -427,7 +432,7 @@ button:focus {
 
 .nav-link {
   color: #fff;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
@@ -442,7 +447,7 @@ button:focus {
 
 .nav-link.fixed-color {
   color: #000;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -465,12 +470,12 @@ button:focus {
   width: 100%;
   background-color: #000;
   padding: 10px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-top__header.nav-top__header--detele {
   display: none !important;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -663,7 +668,7 @@ button:focus {
 .main-general__title p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: 'Servicios';
+  content: "Servicios";
   color: #0e0f3b;
   font-size: 80px;
   top: -60%;
@@ -674,7 +679,7 @@ button:focus {
 .main-general__title.main-general__title--about p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: 'Conócenos';
+  content: "Conócenos";
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
@@ -684,7 +689,7 @@ button:focus {
 .main-general__title.main-general__title--projects p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: 'Proyectos';
+  content: "Proyectos";
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
@@ -694,7 +699,7 @@ button:focus {
 .main-general__title.main-general__title--contact p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: 'Contáctanos';
+  content: "Contáctanos";
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
@@ -704,7 +709,7 @@ button:focus {
 .main-general__title.main-general__title--footer p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: 'Ubicanos';
+  content: "Ubicanos";
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
@@ -1128,6 +1133,19 @@ footer {
   margin-left: 20px;
 }
 
+.main-equipo .main-content__person .hexa {
+  display: flex !important;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+  display: block;
+  width: 8px;
+  height: 9px;
+  background: #fff;
+  position: absolute;
+  left: 30px;
+  top: 110px;
+}
+
 .main-equipo .slick-dotted.slick-slider {
   margin-bottom: 30px;
   display: flex;
@@ -1155,7 +1173,10 @@ footer {
   outline: -webkit-focus-ring-color auto 1px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
   font-size: 45px !important;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#d34494), to(#732dde));
