@@ -15,13 +15,15 @@ $(window).scroll(function () {
     $('.navbar-fixed-js').addClass('fixed');
     $('.nav-link').addClass('fixed-color');
     $('.nav-top__header').addClass('nav-top__header--detele');
-    // $("#iso").addClass('img-size').attr('src', 'assets/img/logo-white.jpg').removeClass('scroll-up');
+    $('.hamburger-inner').addClass('js-hamburger');
+    $("#iso").addClass('img-size').attr('src', 'assets/img/Logo_CM.png').removeClass('scroll-up');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
     $('.nav-link').removeClass('fixed-color');
     $('.nav-top__header').removeClass('nav-top__header--detele');
-    // $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-fvr.jpg').removeClass('scroll-up');
+    $('.hamburger-inner').removeClass('js-hamburger');
+    $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-color.png').removeClass('scroll-up');
 
   }
 });
@@ -38,15 +40,25 @@ $(document).ready(function () {
 
 // menu hambuger
 
+
 $(".hamburger").on("click", function () {
-  $(this).toggleClass("is-active");
+  if (!$(this).hasClass("is-active")) {
+    $(this).addClass("is-active")
+    $('.navbar-fixed-js').addClass('fixed');
+    $('.hamburger-inner').addClass('js-hamburger');
+    $("#iso").addClass('img-size').attr('src', 'assets/img/Logo_CM.png').removeClass('scroll-up');
+    $('.nav-link').addClass('fixed-color');
+  } else {
+    $(this).removeClass("is-active")
+    if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
+      $('.navbar-fixed-js').removeClass('fixed');
+      $('.hamburger-inner').removeClass('js-hamburger');
+      $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-color.png').removeClass('scroll-up');
+      $('.nav-link').removeClass('fixed-color');
+
+    }
+  }
 });
-
-$("#hamburger").on("click", function () {
-  console.log('hola');
-});
-
-
 
 // Font
 $(document).ready(function () {

@@ -107,64 +107,7 @@
   }
 }
 
-.main-client__content {
 
-  .slick-dots {
-    z-index: 2;
-    display: flex;
-    position: absolute;
-    bottom: -30%;
-    right: 55%;
-    width: 0%;
-
-    @include respond-to(md) {
-      left: 40%;
-    }
-
-    @include respond-to(sm) {
-      left: 35%;
-    }
-
-    @include respond-to(xs) {
-      left: 35%;
-    }
-
-    .slick-active {
-      button {
-        &:before {
-          color: $dots-color-active;
-          opacity: 0.75;
-          width: 35px;
-          margin: 0;
-        }
-      }
-    }
-
-    li {
-      margin: 0 10px;
-
-      button {
-
-        &:before {
-          color: $dots-color;
-          content: '';
-          height: $dots-size;
-          width: $dots-size;
-          display: inline-block;
-          background: $orange;
-          border-radius: 6px;
-          cursor: pointer;
-          transition: all 300ms ease;
-        }
-
-        &:hover:before,
-        &:focus:before {
-          color: $dots-color-active;
-        }
-      }
-    }
-  }
-}
 
 .main-election__items {
   .slick-prev {
