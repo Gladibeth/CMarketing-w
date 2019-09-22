@@ -11,7 +11,7 @@ $(function () {
 
 // Menú fixed
 $(window).scroll(function () {
-  if ($(document).scrollTop() > 70 && ($(window).width() >= 768)) {
+  if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
     $('.navbar-fixed-js').addClass('fixed');
     $('.nav-link').addClass('fixed-color');
     $('.nav-top__header').addClass('nav-top__header--detele');

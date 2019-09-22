@@ -43,7 +43,7 @@
               .main-banner__title
                 %p Potencia tu negocio con Marketing digital
               .main-banner__btn.btn-box
-                %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                %button.btn_custom.btn--large.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
                   Contáctanos
             .main-banner__boximg
               .main-banner__img
@@ -164,30 +164,12 @@
         .main-portfolio__content
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item
-              %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Social
-            %li.nav-item
               %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Desarrollo web
+            %li.nav-item
+              %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Social
             %li.nav-item
               %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} Branding
           #pills-tabContent.tab-content
-            #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
-              .container
-                .main-portfolio__grid--social
-                  .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/1.png"}/ 
-                  .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/2.png"}/ 
-                  .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/3.png"}/ 
-                  .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/4.png"}/ 
-                .main-cta__btn
-                  %a.btn_custom.btn--large.btn--filled{ :href=>""}
-                    Todos los proyectos
             #pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"} 
               .container
                 .main-portfolio__grid
@@ -203,9 +185,27 @@
                   .main-portfolio__item
                     .main-portfolio__img 
                       %img{ :src => "assets/img/4.png"}/ 
-                .main-cta__btn
-                  %a.btn_custom.btn--large.btn--filled{ :href=>""}
-                    Todos los proyectos
+                -# .main-cta__btn
+                -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                -#     Todos los proyectos
+            #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+              .container
+                .main-portfolio__grid--social
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/1.png"}/ 
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/2.png"}/ 
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/3.png"}/ 
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/4.png"}/ 
+                -# .main-cta__btn
+                -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                -#     Todos los proyectos
             #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
               .container
                 .main-portfolio__grid--branding
@@ -221,9 +221,9 @@
                   .main-portfolio__item
                     .main-portfolio__img 
                       %img{ :src => "assets/img/4.png"}/ 
-                .main-cta__btn
-                  %a.btn_custom.btn--large.btn--filled{ :href=>""}
-                    -# Todos los proyectos
+                -# .main-cta__btn
+                -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                -#     Todos los proyectos
 
     %section.main-equipo
       %img.animation.particle-3.custom-animation11(src="assets/img/hexagono.png" alt="")/
@@ -382,11 +382,8 @@
        
       .container
         .main-general__title.main-general__title--footer
-          %p Ubicanos
+          %p Conversemos
         
-
-
-
         %section.main-contact
         %img.animation.particle-1(src="assets/img/aaaaRectángulo 1 copia 7.png" alt="")/
         %img.animation.particle-1--right(src="assets/img/aaaaRectángulo 1 copia 7.png" alt="")/
@@ -399,17 +396,17 @@
         
           .main-contact__content
             .main-contact__box
-              %p.conversemos Conversemos
+              -# %p.conversemos Conversemos
               %form
                 .row
-                  .col
+                  .col.col-12.col-lg-6.col-sm-6
                     %input.form-control{:placeholder => "Nombre ", :type => "text"}/
-                  .col
+                  .col.col-12.col-lg-6.col-sm-6
                     %input.form-control{:placeholder => "Teléfono", :type => "phone"}/
                 .row
-                  .col
+                  .col.col-12.col-lg-6.col-sm-6
                     %input.form-control{:placeholder => "Email", :type => "email"}/
-                  .col
+                  .col.col-12.col-lg-6.col-sm-6
                     %input.form-control{:placeholder => "Servicio", :type => "text"}/
 
                 %textarea#comment.form-control{:placeholder => "Mensaje",:rows => "5"}
@@ -427,13 +424,26 @@
                 %ul
                   %li Somos Una Empresa dedicada al Marketing Digital con el foco en la performance de nuestros clientes, nuestro principal objetivo es lograr las metas propuestas de forma eficiente y eficaz asumiendo junto a nuestros clientes el riesgo de cada proyecto.
             .main-footer__info
-              %ul
+              %ul.main-contact__ul      
                 %li
-                  %a{:href=>"mailto:mtello@contactmarketing.cl"} mtello@contactmarketing.cl
+                  %a.main-contact__link{ href: '#' }
+                    %i.fa.fa-envelope
+                    %p mtello@contactmarketing.cl
                 %li
-                  %a{:href=>"tel:56933985125"} +569 3398 5125
+                  %a.main-contact__link{ href: '#' }
+                    %i.fa.fa-location-arrow
+                    %p Avenida apoquindo 6410, oficina 605, Las Condes  
                 %li
-                  %a{:href=>"#"} Avenida apoquindo 6410, oficina 605, Las Condes    
+                  %a.main-contact__link{ href: 'tel:(2)27237847' }
+                    %i.fa.fa-phone
+                    %p +569 3398 5125
+              -# %ul
+              -#   %li
+              -#     %a{:href=>"mailto:mtello@contactmarketing.cl"} mtello@contactmarketing.cl
+              -#   %li
+              -#     %a{:href=>"tel:56933985125"} +569 3398 5125
+              -#   %li
+              -#     %a{:href=>"#"} Avenida apoquindo 6410, oficina 605, Las Condes    
 
             .main-footer__item
               .main-footer__redes
@@ -444,14 +454,41 @@
                 %a{ href: 'https://www.instagram.com/contactmarketing/' }
                   %img{ :src => "assets/img/instagram.png"}/
               .main-cta__btn.main-cta__btn--left
-                %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                %button.btn_custom.btn--large.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
                   Contáctanos
+                  
               
           .main-footer__copy
             %p
               %a{:href =>"http://cmarketing.cl/"}
                 Contact Marketing | 
               Todos los derechos Reservados
+    / Modal
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Puedes contactarnos
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            %form
+              .row
+                .col
+                  %input.form-control{:placeholder => "Nombre ", :type => "text"}/
+                .col
+                  %input.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .row
+                .col
+                  %input.form-control{:placeholder => "Email", :type => "email"}/
+                .col
+                  %input.form-control{:placeholder => "Servicio", :type => "text"}/
+
+              %textarea#comment.form-control{:placeholder => "Mensaje",:rows => "5"}
+              .btn-box.float-right
+                %a.btn_custom.btn--large.btn--filled-blue{ :href=>""}
+                  Enviar
+                        
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}
