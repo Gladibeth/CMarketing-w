@@ -11,6 +11,7 @@
     %link{rel: "stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
     %link{rel: "stylesheet", href:"assets/fonts/flaticon.css"}/
     %link{rel: "stylesheet", href:"assets/cssanimation.css"}/
+    %link{rel: "stylesheet", href:"assets/animate.css"}/
   %body
     %header#home
       %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
@@ -56,7 +57,7 @@
     %section.main-services
       .container
         .main-general__title
-          %p Servicios
+          %p.animated.wow.fadeInUp Servicios
         .main-services__content
           .main-services__item
             .main-services__box
@@ -471,4 +472,5 @@
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
     %script{src: "assets/js/cssanimation-gsap.min.js"}
+    %script{src: "assets/js/wow.min.js"}
     %script{src: "https://apps.elfsight.com/p/platform.js"}
