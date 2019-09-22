@@ -448,7 +448,6 @@ body {
 .btn--filled {
   color: #fff;
   background: linear-gradient(45deg, #eb4a82 0%, #5225f8 100%);
-  border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
@@ -1906,7 +1905,7 @@ footer {
 }
 
 .main-equipo .main-content__redes {
-  margin: 5px 20px;
+  margin: 5px 40px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2233,6 +2232,23 @@ form {
   z-index: 2;
 }
 
+.particle-3__team {
+  width: 3rem;
+  left: 85%;
+  top: 80%;
+  position: absolute;
+  transform: rotateZ(50deg);
+  z-index: 2;
+}
+
+.particle-2__team {
+  width: 4rem;
+  left: 85%;
+  top: 45%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-2 {
   width: 3rem;
   left: 33%;
@@ -2273,6 +2289,22 @@ form {
   z-index: 2;
 }
 
+.particle-6__cta {
+  width: 5rem;
+  left: 30%;
+  top: 66%;
+  position: absolute;
+  z-index: 2;
+}
+
+.particle-7__cta {
+  width: 5rem;
+  left: 63%;
+  top: 18%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-4 {
   width: 21rem;
   left: 86%;
@@ -2305,6 +2337,7 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
 .modal-content {
   background-color: #161743 !important;
 }
@@ -2334,4 +2367,24 @@ label {
 
 .modal-body {
   padding: 30px;
+=======
+.slick-prev:before, .slick-next:before {
+  font-size: 40px !important;
+}
+
+.slick-prev {
+  right: 120% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.slick-next {
+  right: 108% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.main__team {
+  overflow-y: hidden;
+>>>>>>> 0e49cdf9b9fe792f861a6369b08bc1c802cf71a0
 }
