@@ -5,6 +5,7 @@
 @import "setting-slick";
 @import "buttons";
 
+
 body {
   background-color: $contact;
   font-family: $FiraSans;
@@ -43,7 +44,7 @@ button:focus {
 
   @include respond-to(xs) {
     height: 75px;
-    background-color: $white;
+    // background-color: $white;
   }
 
   &.fixed {
@@ -90,15 +91,25 @@ button:focus {
   &.fixed-color {
     color: $black;
     transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+    }
   }
 
   &:hover {
-    color: $black;
+    color: $white;
   }
 }
 
+
 .navbar-brand {
   width: 220px;
+
+  @include respond-to(xs) {
+    width: 200px;
+    margin-left: 10px;
+  }
 
   img {
     width: 100%;
@@ -186,6 +197,12 @@ button:focus {
       left: 10%;
     }
 
+    @include respond-to(xs) {
+      left: 22%;
+      width: 300px;
+      top: 53%;
+    }
+
     p {
       padding: 0 25px;
       color: $white;
@@ -206,7 +223,7 @@ button:focus {
 
 
       @include respond-to(xs) {
-        font-size: 30px;
+        font-size: 25px;
         padding: 0;
       }
     }
@@ -229,6 +246,10 @@ button:focus {
 
     @include respond-to(sm) {
       left: 22%;
+    }
+
+    @include respond-to(xs) {
+      bottom: 20%;
     }
   }
 
@@ -285,6 +306,13 @@ button:focus {
       top: 14%;
     }
 
+    @include respond-to(xs) {
+      position: absolute;
+      right: 69px;
+      top: 12%;
+      z-index: 9;
+    }
+
     img {
       width: 90%;
       height: 100%;
@@ -296,6 +324,10 @@ button:focus {
 
       @include respond-to(sm) {
         width: 60%;
+      }
+
+      @include respond-to(xs) {
+        width: 100%;
       }
     }
   }
@@ -318,6 +350,10 @@ button:focus {
 
   @include respond-to(sm) {
     right: -110px;
+  }
+
+  @include respond-to(xs) {
+    display: none;
   }
 
   img {
@@ -443,14 +479,25 @@ button:focus {
 
   &.main-general__title--footer {
     p {
+
+      @include respond-to(xs) {
+        font-size: 45px;
+      }
+
       &:before {
         font-family: $FiraSans;
         position: absolute;
-        content: "Ubicanos";
+        content: "Conversemos";
         color: $text;
         font-size: 80px;
         top: -100%;
         left: -30%;
+
+        @include respond-to(xs) {
+          font-size: 45px;
+          top: -65%;
+          left: 0%;
+        }
       }
     }
   }
@@ -504,7 +551,7 @@ button:focus {
 }
 
 .main-services__item {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: $text;
   border: 1px solid $white;
 
@@ -665,10 +712,10 @@ button:focus {
   display: flex;
   justify-content: center;
 
-  &.main-cta__btn--left {
-    margin-top: 20px;
-    justify-content: flex-start;
-  }
+  // &.main-cta__btn--left {
+  //   margin-top: 20px;
+  //   justify-content: flex-;
+  // }
 }
 
 .main-cta__boximg {
@@ -791,6 +838,10 @@ button:focus {
   margin-top: 50px;
   margin-bottom: 40px;
 
+  @include respond-to(xs) {
+    grid-template-rows: repeat(4, 250px);
+  }
+
 
   .main-portfolio__item {
     .main-portfolio__img {
@@ -806,18 +857,38 @@ button:focus {
 
     &:nth-child(1) {
       grid-column: 1/2;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+        grid-row: 1/2;
+      }
     }
 
     &:nth-child(2) {
       grid-column: 2/4;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+        grid-row: 2/3;
+      }
     }
 
     &:nth-child(3) {
       grid-column: 1/3;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+        grid-row: 3/4;
+      }
     }
 
     &:nth-child(4) {
       grid-column: 3/4;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+        grid-row: 4/5;
+      }
     }
   }
 }
@@ -829,9 +900,6 @@ button:focus {
   grid-gap: 20px;
   margin-top: 50px;
 
-  @include respond-to(xs) {
-    grid-template-columns: 100%;
-  }
 
   .main-portfolio__item {
     .main-portfolio__img {
@@ -849,20 +917,32 @@ button:focus {
       grid-row: 1/3;
 
       @include respond-to(xs) {
-        grid-row: 1/2;
+        grid-column: 1/4;
       }
     }
 
     &:nth-child(2) {
       grid-row: 1/3;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+      }
     }
 
     &:nth-child(3) {
       grid-row: 1/3;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+      }
     }
 
     &:nth-child(4) {
       grid-row: 3/-1;
+
+      @include respond-to(xs) {
+        grid-column: 1/4;
+      }
     }
   }
 }
@@ -873,6 +953,11 @@ button:focus {
   grid-template-rows: repeat(2, 250px);
   grid-gap: 20px;
   margin-top: 50px;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 250px);
+  }
 
   .main-portfolio__item {
     .main-portfolio__img {
@@ -895,6 +980,14 @@ button:focus {
 
   .main-contact__box {
     width: 70%;
+
+    @include respond-to(sm) {
+      width: 90%;
+    }
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
   }
 }
 
@@ -903,8 +996,8 @@ input[type="phone"],
 input[type="email"],
 input[type="number"] {
   margin-bottom: 20px;
-  background-color: transparent;
-  border: 1px solid gray;
+  background-color: #307ea5;
+  border: 1px solid transparent;
   padding: 20px 10px;
   // border-top: none;
   // border-left: none;
@@ -919,13 +1012,20 @@ input[type="number"] {
     box-shadow: 0 0 0 0.2rem transparent;
     // border-bottom: 2px solid #5225f8;
   }
+
+  &::placeholder {
+    color: #fff !important;
+  }
 }
+
+
+
 
 textarea {
   &.form-control {
     background-color: transparent;
-    background-color: transparent;
-    border: 1px solid gray;
+    background-color: #307ea5;
+    border: 1px solid transparent;
 
     // border-top: none;
     // border-left: none;
@@ -939,9 +1039,12 @@ textarea {
     &:focus {
       border: 1px solid #307ea5;
       background-color: transparent;
-      border-color: transparent;
       box-shadow: 0 0 0 0.2rem transparent;
       // border-bottom: 2px solid #5225f8;
+    }
+
+    &::placeholder {
+      color: #fff !important;
     }
   }
 }
@@ -951,14 +1054,15 @@ textarea {
   display: flex;
   align-items: center;
 
+
   @include respond-to(xs) {
     height: auto;
   }
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -966,10 +1070,20 @@ textarea {
   display: grid;
   // grid-template-columns: 70% 30%;
   grid-template-columns: 40% 30% 30%;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .main-footer__info {
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .main-footer__info ul {
@@ -980,6 +1094,10 @@ textarea {
   }
 
   li {
+    @include respond-to(sm) {
+      font-size: 13px;
+    }
+
     @include respond-to(xs) {
       margin-bottom: 10px;
     }
@@ -988,10 +1106,16 @@ textarea {
       color: $white;
       font-family: $FiraSans;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 16px;
+      display: flex;
+      align-items: baseline;
+
+      i {
+        margin-right: 10px;
+      }
 
       @include respond-to(sm) {
-        font-size: 18px;
+        font-size: 13px;
       }
 
       &:hover {
@@ -1012,6 +1136,8 @@ textarea {
 }
 
 .main-footer__redes {
+  margin-bottom: 30px;
+
   a {
     img {
       width: 20px;
@@ -1026,7 +1152,7 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  position: absolute;
+  // position: absolute;
   bottom: 0;
 
   @include respond-to(xs) {
@@ -1054,12 +1180,12 @@ textarea {
 
 .main-footer__img {
   img {
-    width: 60%;
+    width: 85%;
   }
 }
 
 footer {
-  margin-top: 100px;
+  padding-top: 150px;
   position: relative;
 }
 
@@ -1123,6 +1249,11 @@ footer {
         justify-content: center;
         order: -1;
         background-color: transparent;
+      }
+
+      img {
+        width: 15rem;
+        height: 18rem;
       }
     }
 
@@ -1205,10 +1336,18 @@ footer {
   .main-content__redes {
     margin: 5px 40px;
 
+    @include respond-to(xs) {
+      text-align: center;
+    }
+
     i {
       color: #fff;
       font-size: 20px;
       margin-left: 20px;
+
+      @include respond-to(xs) {
+        margin-left: 10px;
+      }
 
     }
   }
@@ -1315,6 +1454,17 @@ footer {
       to(#732dde));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 8px !important;
 }
 
 /* line 248, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
@@ -1583,6 +1733,7 @@ form {
   position: absolute;
   z-index: 2;
 }
+
 .particle-6__cta {
   width: 5rem;
   left: 30%;
@@ -1631,8 +1782,8 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
-.slick-prev:before, .slick-next:before {
-  font-size: 40px!important;
+.modal-content {
+  background-color: $contact !important;
 }
 
 .slick-prev {
@@ -1645,8 +1796,29 @@ label {
   right: 108%!important;
   z-index: 9 !important;
   top: 102% !important;
+.modal-header {
+  border-bottom: 1px solid transparent;
+  padding: 30px;
 }
 
-.main__team {
-  overflow-y: hidden;
+.close {
+  color: $white;
+
+  &:hover {
+    color: $white !important;
+  }
+}
+
+.modal-title {
+  color: $white;
+  font-size: 30px;
+}
+
+.modal-dialog {
+  max-width: 570px;
+  margin: 1.75rem auto;
+}
+
+.modal-body {
+  padding: 30px;
 }
