@@ -138,7 +138,7 @@ $('.slider-for__team').slick({
   asNavFor: '.slider-nav__team'
 });
 $('.slider-nav__team').slick({
-  slidesToShow: 5,
+  slidesToShow: 6,
   slidesToScroll: 1,
   asNavFor: '.slider-for__team',
   dots: true,
