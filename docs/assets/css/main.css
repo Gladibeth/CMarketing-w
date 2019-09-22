@@ -1784,7 +1784,7 @@ footer {
 .main-equipo .main__team {
   display: grid;
   grid-template-columns: 68% 32%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1823,7 +1823,19 @@ footer {
 
 .main-equipo .main-content__person .main-content__img {
   background: #0e0f3b;
-  width: 178px;
+  width: 27%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-equipo .main-content__person .main-content__img {
+    width: 33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-equipo .main-content__person .main-content__img {
+    width: 33%;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2244,6 +2256,23 @@ form {
   z-index: 2;
 }
 
+.particle-3__team {
+  width: 3rem;
+  left: 85%;
+  top: 80%;
+  position: absolute;
+  z-index: 2;
+  transform: rotateZ(50deg);
+}
+
+.particle-2__team {
+  width: 4rem;
+  left: 85%;
+  top: 45%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-1 {
   width: 5rem;
   left: -3%;
@@ -2312,6 +2341,18 @@ label {
   background-color: #161743 !important;
 }
 
+.slick-prev {
+  right: 120% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.slick-next {
+  right: 108% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
 .modal-header {
   border-bottom: 1px solid transparent;
   padding: 30px;
@@ -2337,4 +2378,9 @@ label {
 
 .modal-body {
   padding: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px !important;
 }

@@ -1211,7 +1211,7 @@ footer {
   .main__team {
     display: grid;
     grid-template-columns: 68% 32%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include respond-to(sm) {
       grid-template-columns: 80% 20%;
@@ -1237,11 +1237,20 @@ footer {
     .main-content__description {
       background: #0e0f3b;
       color: #fff;
+      // padding-bottom: 20px;
     }
 
     .main-content__img {
       background: #0e0f3b;
-      width: 178px;
+      width: 27%;
+
+      @include respond-to(md) {
+        width: 33%;
+      }
+
+      @include respond-to(sm) {
+        width: 33%;
+      }
 
       @include respond-to(xs) {
         width: 100%;
@@ -1684,6 +1693,23 @@ form {
   z-index: 2;
 }
 
+.particle-3__team {
+  width: 3rem;
+  left: 85%;
+  top: 80%;
+  position: absolute;
+  z-index: 2;
+  transform: rotateZ(50deg);
+}
+
+.particle-2__team {
+  width: 4rem;
+  left: 85%;
+  top: 45%;
+  position: absolute;
+  z-index: 2;
+}
+
 .particle-1 {
   width: 5rem;
   left: -3%;
@@ -1752,6 +1778,18 @@ label {
   background-color: $contact !important;
 }
 
+.slick-prev {
+  right: 120% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
+.slick-next {
+  right: 108% !important;
+  z-index: 9 !important;
+  top: 102% !important;
+}
+
 .modal-header {
   border-bottom: 1px solid transparent;
   padding: 30px;
@@ -1777,4 +1815,9 @@ label {
 
 .modal-body {
   padding: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px !important;
 }
