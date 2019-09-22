@@ -927,11 +927,7 @@ button:focus {
 .main-general__title.main-general__title--projects p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-<<<<<<< HEAD
   content: 'Portafolio';
-=======
-  content: "Proyectos";
->>>>>>> b34af0039fd63da92614905430f49eec39633a66
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
@@ -1512,12 +1508,6 @@ textarea.form-control:focus {
   color: #fff;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-footer__content {
-    grid-template-columns: 100%;
-  }
-}
-
 .main-footer__info ul {
   list-style: none;
 }
@@ -1606,6 +1596,7 @@ textarea.form-control:focus {
 
 footer {
   margin-top: 100px;
+  position: relative;
 }
 
 .main-footer__box {
@@ -1619,21 +1610,19 @@ footer {
   opacity: 0.2;
 }
 
-<<<<<<< HEAD
 @media (min-width: 0px) and (max-width: 767px) {
   .main-footer__boximg {
     left: -10%;
   }
-=======
+}
+
 .main-equipo {
   position: relative;
->>>>>>> b34af0039fd63da92614905430f49eec39633a66
 }
 
 .main-equipo .main__team {
   display: grid;
   grid-template-columns: 68% 32%;
-<<<<<<< HEAD
   overflow-x: hidden;
 }
 
@@ -1647,9 +1636,6 @@ footer {
   .main-equipo .main__team {
     grid-template-columns: 100%;
   }
-=======
-  position: relative;
->>>>>>> b34af0039fd63da92614905430f49eec39633a66
 }
 
 .main-equipo .main-content__person {
@@ -1694,9 +1680,6 @@ footer {
   margin: 50px 50px 12px;
   font-weight: 800;
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1706,7 +1689,7 @@ footer {
 }
 
 .main-equipo .main-content__person .main-content__subtitle {
-  margin: 5px 140px;
+  margin: 5px 50px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 200;
 }
@@ -1759,17 +1742,54 @@ footer {
   }
 }
 
-.main-equipo .main-content__person .main-content__redes {
-  margin: 5px 135px;
+.main-equipo .main-content__redes {
+  margin: 5px 20px;
 }
 
-.main-equipo .main-content__person .main-content__redes i {
+.main-equipo .main-content__redes i {
   color: #fff;
   font-size: 20px;
   margin-left: 20px;
 }
 
-.main-equipo .main-content__person .hexa {
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide img {
+  display: flex !important;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+  display: block;
+  width: 22rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .slick-slide img {
+    width: 15rem;
+    height: 18rem;
+  }
+}
+
+.slider-nav__team .slick-slide img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.slider-nav__team .slick-slide.slick-current {
+  display: none !important;
+}
+
+.slider-nav__team .slick-slide.slick-current .hexa {
   display: flex !important;
   justify-content: center;
   clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
@@ -1782,13 +1802,13 @@ footer {
   top: 110px;
 }
 
-.main-equipo .slick-dotted.slick-slider {
+.slick-dotted.slick-slider {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
 
-.main-equipo .slick-slide img {
+.slick-slide img {
   display: flex !important;
   justify-content: center;
   clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
@@ -1798,28 +1818,17 @@ footer {
   object-fit: cover;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-equipo .slick-slide img {
-    width: 15rem;
-    height: 18rem;
-  }
-}
-
-.main-equipo .slider-nav__team .slick-slide img {
+.slider-nav__team .slick-slide img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   cursor: pointer;
 }
 
-.main-equipo :focus {
+:focus {
   outline: -webkit-focus-ring-color auto 1px;
 }
 
-<<<<<<< HEAD
-.slider-nav__team .slick-slide.slick-current {
-  display: none !important;
-=======
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
@@ -2109,5 +2118,4 @@ label {
   background: -webkit-gradient(linear, left top, left bottom, from(#d34494), to(#732dde));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
->>>>>>> b34af0039fd63da92614905430f49eec39633a66
 }
