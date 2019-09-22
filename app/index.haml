@@ -9,6 +9,8 @@
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
     %link{rel: "stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
+    %link{rel: "stylesheet", href:"assets/fonts/flaticon.css"}/
+    %link{rel: "stylesheet", href:"assets/cssanimation.css"}/
   %body
     %header#home
       %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
@@ -57,67 +59,67 @@
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Email Marketing
+                %p Redes Sociales
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-like
             .main-services__description
-              %p Campañas masivas de emailing informativo, transaccional o con otros fines.
+              %p Creación de contenido, manejo y diseño de piezas para redes sociales.
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Diseño Gráfico
+                %p Medios Digitales
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-ecommerce
             .main-services__description
-              %p Imagen corporativa, diseño editorial, comunicación visual.
+              %p Inversión en Google Ads, Facebook Ads y otros medios digitales.
           .main-services__item
             .main-services__box
               .main-services__title
                 %p Business Intelligence
               .main-services__img
-                %img{ :src => "assets/img/solution.png"}/
+                %span.flaticon-think
             .main-services__description
               %p Inteligencia de negocios aplicada principalmente al marketing digital. Aumentando trazabilidad de los proyectos y detalle funner de conversión.
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Email Marketing
+                %p Chat Bot
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-bot
             .main-services__description
-              %p Campañas masivas de emailing informativo, transaccional o con otros fines.
+              %p Creación de asistentes inteligentes ya sea para atención al cliente u orientada a la conversión.
           .main-services__item
             .main-services__box
               .main-services__title
                 %p Email Marketing
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-mail
             .main-services__description
               %p Campañas masivas de emailing informativo, transaccional o con otros fines.
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Email Marketing
+                %p Sitios Web
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-browser
             .main-services__description
-              %p Campañas masivas de emailing informativo, transaccional o con otros fines.
+              %p Creación, optimización y mantenimiento de sitios web responsive, Landing Page, E-commerce.
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Email Marketing
+                %p SMS Corporativo
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-sms
             .main-services__description
-              %p Campañas masivas de emailing informativo, transaccional o con otros fines.
+              %p Envío masivo de SMS mediante una plataforma segura y eficiente.
           .main-services__item
             .main-services__box
               .main-services__title
-                %p Email Marketing
+                %p Diseño Gráfico
               .main-services__img
-                %img{ :src => "assets/img/chat.png"}/
+                %span.flaticon-pen
             .main-services__description
-              %p Campañas masivas de emailing informativo, transaccional o con otros fines.
+              %p Imagen corporativa, diseño editorial, comunicación visual.
         .main-services__img--box
           .main-services__img-float
             %img{ :src => "assets/img/Rectángulo 1 copia 7.png"}/
@@ -221,9 +223,12 @@
                       %img{ :src => "assets/img/4.png"}/ 
                 .main-cta__btn
                   %a.btn_custom.btn--large.btn--filled{ :href=>""}
-                    Todos los proyectos
+                    -# Todos los proyectos
 
     %section.main-equipo
+      %img.animation.particle-3.custom-animation11(src="assets/img/hexagono.png" alt="")/
+      %img.animation.particle-2.custom-animation4(src="assets/img/hexa.png" alt="")/
+        
       .main-general__title.main-general__title--team
         %p Nuestro Team
       .main__team
@@ -231,7 +236,7 @@
           .main-content__person
             .main-content__description
               .main-content__title
-                %p ¡Hola soy Matias Tello!
+                %p¡Hola soy Matias Tello!
               .main-content__subtitle
                 %p Director Digital
                 %p -Co fundador
@@ -244,18 +249,117 @@
                   %i.fa.fa-twitter
                 %a{ href: '#' }
                   %i.fa.fa-linkedin
-
             .main-content__img
               %img(src="assets/img/MATIAS-TELLO.png" alt="")/
           .main-content__person
-            %h3 2
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Yonnys Quintero!
+              .main-content__subtitle
+                %p Director de proyectos
+                %p -Co fundador
+                %p -Emprendedor unico y especial
+                %p -Ingeniero de sitemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/YONNYS-QUINTERO.jpg" alt="")/
           .main-content__person
-            %h3 3
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Gladibeth Franco!
+              .main-content__subtitle
+                %p Desarrollador frontend
+                -# %p -
+                %p -La estrella del equipo
+                %p -Ingeniero de sistemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/GLADIBETH-FRANCO.jpg" alt="")/
           .main-content__person
-            %h3 4
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Genesis Navas!
+              .main-content__subtitle
+                %p Desarrollador frontend
+                %p -Marta
+                -# %p -
+                %p -Ingeniero de sistemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/GENESIS-NAVAS.png" alt="")/
           .main-content__person
-            %h3 5
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Yively Alvarez!
+              .main-content__subtitle
+                %p Cordinador de desarrollo
+                %p -
+                %p -
+                %p -Ingeniero de sistemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/YIVELY-ALVAREZ.jpg" alt="")/
+          .main-content__person
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Francisca Tello!
+              .main-content__subtitle
+                %p Redactora
+                -# %p -
+                -# %p -
+                -# %p -Ingeniero de sistemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/FRANCISCA-TELLO.jpeg" alt="")/
 
+          .main-content__person
+            .main-content__description
+              .main-content__title
+                %p ¡Hola soy Jesús Saavedra!
+              .main-content__subtitle
+                %p Community Manager
+                -# %p -
+                -# %p -
+                -# %p -Ingeniero de sistemas
+              .main-content__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-twitter
+                %a{ href: '#' }
+                  %i.fa.fa-linkedin
+            .main-content__img
+              %img(src="assets/img/IMG_20190905_080825-01.jpeg" alt="")/
         .slider.slider-nav__team
           %div
             %img(src="assets/img/MATIAS-TELLO.png" alt="")/
@@ -274,33 +378,45 @@
           %div
             %img(src="assets/img/team-4.jpg" alt="")/
 
-    %section.main-contact
-      .container
-        .main-general__title.main-general__title--contact
-          %p Contáctanos
-        .main-contact__content
-          .main-contact__box
-            %form
-              .row
-                .col
-                  %input.form-control{:placeholder => "Nombre ", :type => "text"}/
-                .col
-                  %input.form-control{:placeholder => "Teléfono", :type => "phone"}/
-              .row
-                .col
-                  %input.form-control{:placeholder => "Email", :type => "email"}/
-                .col
-                  %input.form-control{:placeholder => "Servicio", :type => "text"}/
-
-              %textarea#comment.form-control{:placeholder => "Mensaje",:rows => "5"}
-              .main-cta__btn
-                %a.btn_custom.btn--large.btn--filled-blue{ :href=>""}
-                  Enviar
     %footer.main-footer
        
       .container
         .main-general__title.main-general__title--footer
           %p Ubicanos
+        
+
+
+
+        %section.main-contact
+        %img.animation.particle-1(src="assets/img/aaaaRectángulo 1 copia 7.png" alt="")/
+        %img.animation.particle-1--right(src="assets/img/aaaaRectángulo 1 copia 7.png" alt="")/
+        %img.animation.particle-5.custom-animation4(src="assets/img/bg-s3-4.png" alt="")/
+        %img.animation.particle-6.custom-animation4(src="assets/img/Rectángulo 1 copia 6.png" alt="")/
+        %img.animation.particle-4(src="assets/img/bg-s3-2.png" alt="")/
+        %img.animation.particle-4--left(src="assets/img/bg-s3-2.png" alt="")/
+        %img.animation.particle-7(src="assets/img/Rectángulo 1 copia 5.png" alt="")/
+        .container
+        
+          .main-contact__content
+            .main-contact__box
+              %p.conversemos Conversemos
+              %form
+                .row
+                  .col
+                    %input.form-control{:placeholder => "Nombre ", :type => "text"}/
+                  .col
+                    %input.form-control{:placeholder => "Teléfono", :type => "phone"}/
+                .row
+                  .col
+                    %input.form-control{:placeholder => "Email", :type => "email"}/
+                  .col
+                    %input.form-control{:placeholder => "Servicio", :type => "text"}/
+
+                %textarea#comment.form-control{:placeholder => "Mensaje",:rows => "5"}
+                .main-cta__btn
+                  %a.btn_custom.btn--large.btn--filled-blue{ :href=>""}
+                    Enviar
+                        
         .main-footer__box
           .main-footer__boximg
             .main-footer__img 
@@ -309,13 +425,16 @@
             .main-footer__item
               .main-footer__info
                 %ul
-                  %li
-                    %a{:href=>"mailto:mtello@contactmarketing.cl"} mtello@contactmarketing.cl
-                  %li
-                    %a{:href=>"tel:56933985125"} +569 3398 5125
-                  %li
-                    %a{:href=>"#"} Avenida apoquindo 6410, oficina 605, Las Condes
-                  
+                  %li Somos Una Empresa dedicada al Marketing Digital con el foco en la performance de nuestros clientes, nuestro principal objetivo es lograr las metas propuestas de forma eficiente y eficaz asumiendo junto a nuestros clientes el riesgo de cada proyecto.
+            .main-footer__info
+              %ul
+                %li
+                  %a{:href=>"mailto:mtello@contactmarketing.cl"} mtello@contactmarketing.cl
+                %li
+                  %a{:href=>"tel:56933985125"} +569 3398 5125
+                %li
+                  %a{:href=>"#"} Avenida apoquindo 6410, oficina 605, Las Condes    
+
             .main-footer__item
               .main-footer__redes
                 %a{ href: 'https://www.facebook.com/Contact-Marketing-904814839714398'  }
@@ -338,3 +457,5 @@
     %script{src: "assets/js/slick.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    %script{src: "assets/js/cssanimation-gsap.min.js"}
+    %script{src: "https://apps.elfsight.com/p/platform.js"}

@@ -1,39 +1,39 @@
-$('.main-banner__content').slick({
-  infinite: true,
-  autoplay: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  arrows: false,
-  responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: true,
-        arrows: false,
-        autoplaySpeed: 1000
-      }
-    }
-  ]
-});
+// $('.main-banner__content').slick({
+//   infinite: true,
+//   autoplay: false,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   dots: true,
+//   arrows: false,
+//   responsive: [{
+//       breakpoint: 1200,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: false
+//       }
+//     },
+//     {
+//       breakpoint: 900,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         dots: false,
+//         autoplay: true,
+//         arrows: false,
+//         autoplaySpeed: 1000
+//       }
+//     }
+//   ]
+// });
 
 $('.main-about__block').slick({
   infinite: true,
@@ -139,7 +139,7 @@ $('.slider-for__team').slick({
 
 });
 $('.slider-nav__team').slick({
-  slidesToShow: 5,
+  slidesToShow: 6,
   slidesToScroll: 1,
   asNavFor: '.slider-for__team',
   dots: true,
