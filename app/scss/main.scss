@@ -842,6 +842,11 @@ button:focus {
   .nav-link {
     color: $white;
 
+    @include respond-to(xs) {
+      font-size: 13px;
+      padding: 0px;
+    }
+
     &.active {
       background-color: transparent;
       position: relative;
