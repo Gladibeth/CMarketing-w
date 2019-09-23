@@ -407,8 +407,23 @@
             %img(src="assets/img/FRANCISCA-TELLO.jpeg" alt="")/
           %div
             %img(src="assets/img/IMG_20190905_080825-01.jpeg" alt="")/
-          %div
-            %img(src="assets/img/team-4.jpg" alt="")/
+          -# %div
+          -#   %img(src="assets/img/team-4.jpg" alt="")/
+    %section.main-clientes
+      .main-general__title.main-general__title--clientes
+        %p Clientes
+      .main_clientes.container
+        .clients__img
+          %img(src="assets/img/logo-color.png" alt="")/
+        .clients__img
+          %img(src="assets/img/Logo_wxhite.png" alt="")/
+        .clients__img
+          %img(src="assets/img/logo-color.png" alt="")/
+        .clients__img
+          %img(src="assets/img/Logo_wxhite.png" alt="")/
+        .clients__img
+          %img(src="assets/img/logo-color.png" alt="")/
+
 
     %footer.main-footer#contact
       .container
@@ -476,11 +491,11 @@
 
             .main-footer__item
               .main-footer__redes
-                %a{ href: 'https://www.facebook.com/Contact-Marketing-904814839714398'  }
+                %a{ href: 'https://www.facebook.com/Contact-Marketing-904814839714398', :target=>"_blank"  }
                   %img{ :src => "assets/img/facebook-letter-logo.png" }/
-                %a{ href: '#' }
+                %a{ href: 'https://www.linkedin.com/company/35679504', :target=>"_blank" }
                   %img{ :src => "assets/img/linkedin-logo.png"}/
-                %a{ href: 'https://www.instagram.com/contactmarketing/' }
+                %a{ href: 'https://www.instagram.com/contactmarketing/' , :target=>"_blank"}
                   %img{ :src => "assets/img/instagram.png"}/
               .main-cta__btn.main-cta__btn--left
                 %button.btn_custom.btn--large.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
