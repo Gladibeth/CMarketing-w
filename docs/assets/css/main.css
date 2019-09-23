@@ -700,6 +700,7 @@ button:focus {
     left: 22%;
     width: 300px;
     top: 53%;
+    display: none;
   }
 }
 
@@ -1195,6 +1196,21 @@ button:focus {
   transform: rotatey(190deg);
   left: -30px;
   z-index: -1;
+}
+
+.main-banner__title__responsive {
+  display: none;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-banner__title__responsive {
+    display: block;
+    position: absolute;
+    left: 22%;
+    width: 300px;
+    top: 48%;
+    color: #fff;
+  }
 }
 
 .main-cta {
@@ -2383,4 +2399,16 @@ label {
 .slick-prev:before,
 .slick-next:before {
   font-size: 35px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrap {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrap {
+    font-size: 26px !important;
+  }
 }

@@ -201,6 +201,7 @@ button:focus {
       left: 22%;
       width: 300px;
       top: 53%;
+      display: none;
     }
 
     p {
@@ -650,6 +651,19 @@ button:focus {
   transform: rotatey(190deg);
   left: -30px;
   z-index: -1;
+}
+
+.main-banner__title__responsive {
+  display: none;
+
+  @include respond-to(xs) {
+    display: block;
+    position: absolute;
+    left: 22%;
+    width: 300px;
+    top: 48%;
+    color: #fff;
+  }
 }
 
 .main-cta {
@@ -1820,4 +1834,15 @@ label {
 .slick-prev:before,
 .slick-next:before {
   font-size: 35px !important;
+}
+
+.wrap {
+
+  @include respond-to(md) {
+    font-size: 30px !important;
+  }
+
+  @include respond-to(sm) {
+    font-size: 26px !important;
+  }
 }
