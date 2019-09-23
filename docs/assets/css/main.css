@@ -931,11 +931,11 @@ button:focus {
 .main-general__title.main-general__title--about p:before {
   font-family: "Fira Sans", sans-serif;
   position: absolute;
-  content: "Conócenos";
+  content: "Nosotros";
   color: #0e0f3b;
   font-size: 80px;
   top: -100%;
-  left: -30%;
+  left: -1%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1571,7 +1571,7 @@ button:focus {
 
 .main-portfolio__grid--branding {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 3fr;
   grid-template-rows: repeat(2, 250px);
   grid-gap: 20px;
   margin-top: 50px;
@@ -2507,6 +2507,11 @@ label {
 .slick-prev:before,
 .slick-next:before {
   font-size: 35px !important;
+}
+
+.wrap {
+  font-size: 45px !important;
+  line-height: 1px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

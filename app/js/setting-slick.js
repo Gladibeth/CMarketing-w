@@ -1,6 +1,6 @@
 $('.main_clientes').slick({
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   dots: true,

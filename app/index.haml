@@ -4,6 +4,7 @@
     %meta{charset: "UTF-8"}/
     %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
     %title Contact Marketing
+    %link{:href => "assets/img/portafolio/favico.png", :rel => "icon", :type => "image/png"}/
     %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
@@ -29,7 +30,7 @@
               %li.nav-item
                 %a.nav-link{:href => "#services"} Servicios
               %li.nav-item
-                %a.nav-link{:href => "#about"} Conócenos
+                %a.nav-link{:href => "#about"} Sobre nosotros
               %li.nav-item
                 %a.nav-link{:href => "#portfolio"} Proyectos
               %li.nav-item
@@ -147,7 +148,7 @@
             .main-cta__text
               %p Invierte en marketing de perdormance y potencia tus acciones
               .main-cta__btn
-                %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                %button.btn_custom.btn--large.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
                   Contáctanos
           .main-cta__item
             .main-cta__boximg
@@ -157,7 +158,7 @@
                 %img{ :src => "assets/img/Rectángulo 1 copia 7.png"}/
     %section.main-about#about
       .main-general__title.main-general__title--about
-        %p Conócenos
+        %p Sobre Nosotros
       .main-about__content
         .main-about__item
           .main-about__box
@@ -181,13 +182,33 @@
         .main-portfolio__content
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item
-              %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Social
+              %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Desarrollo web
             %li.nav-item
-              %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Desarrollo web
-            %li.nav-item
-              %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} Branding
+              %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Branding
+            -# %li.nav-item
+            -#   %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"}  Social
           #pills-tabContent.tab-content
             #pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"} 
+              .container
+                .main-portfolio__grid--branding
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/portafolio/806624151_262407.jpg"}/ 
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/portafolio/carla.png"}/  
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/portafolio/contact.jpeg"}/ 
+                  .main-portfolio__item
+                    .main-portfolio__img 
+                      %img{ :src => "assets/img/portafolio/photo4918097275067148355.jpg"}/ 
+                -# .main-cta__btn
+                -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
+                -#     Todos los proyectos
+        
+                
+            #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
               .container
                 .main-portfolio__grid
                   .main-portfolio__item
@@ -206,10 +227,23 @@
                     %a{ :href=>"http://fuerzadeventaremota.cl", :target=>"_blank"}
                       .main-portfolio__img 
                         %img{ :src => "assets/img/4.png"}/ 
+                  .main-portfolio__item
+                    %a{ :href=>"https://www.reservanativachiloe.cl/", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/portafolio/reserva.png"}/ 
+                  .main-portfolio__item
+                    %a{ :href=>"https://lacajadepati.com/", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/portafolio/paty.png"}/ 
+                  .main-portfolio__item
+                    %a{ :href=>"https://ecokclimatizacion.cl/", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/portafolio/eko.png"}/ 
                 -# .main-cta__btn
                 -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
                 -#     Todos los proyectos
-            #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+        
+            #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
               .container
                 .main-portfolio__grid--social
                   .main-portfolio__item
@@ -231,28 +265,7 @@
                 -# .main-cta__btn
                 -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
                 -#     Todos los proyectos
-            #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
-              .container
-                .main-portfolio__grid--branding
-                  .main-portfolio__item
-                    %a{ :href=>"http://banqueteriaflorence.cl", :target=>"_blank"}
-                      .main-portfolio__img 
-                        %img{ :src => "assets/img/1.png"}/ 
-                  .main-portfolio__item
-                    %a{ :href=>"http://rymedsolucionesmedicas.cl", :target=>"_blank"}
-                      .main-portfolio__img 
-                        %img{ :src => "assets/img/2.png"}/ 
-                  .main-portfolio__item
-                    %a{ :href=>"http://clinicavitalmed.cl", :target=>"_blank"}
-                      .main-portfolio__img 
-                        %img{ :src => "assets/img/3.png"}/ 
-                  .main-portfolio__item
-                    %a{ :href=>"http://fuerzadeventaremota.cl", :target=>"_blank"}
-                      .main-portfolio__img 
-                        %img{ :src => "assets/img/4.png"}/ 
-                -# .main-cta__btn
-                -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
-                -#     Todos los proyectos
+               
 
     %section.main-equipo#team
       %img.animation.particle-3.custom-animation11(src="assets/img/hexagono.png" alt="")/
