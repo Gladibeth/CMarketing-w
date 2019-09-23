@@ -181,9 +181,9 @@
         .main-portfolio__content
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item
-              %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Desarrollo web
-            %li.nav-item
               %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Social
+            %li.nav-item
+              %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Desarrollo web
             %li.nav-item
               %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} Branding
           #pills-tabContent.tab-content
@@ -191,17 +191,21 @@
               .container
                 .main-portfolio__grid
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/1.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/1.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/2.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/2.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/3.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/3.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/4.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/4.png"}/ 
                 -# .main-cta__btn
                 -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
                 -#     Todos los proyectos
@@ -209,17 +213,21 @@
               .container
                 .main-portfolio__grid--social
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/1.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/1.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/2.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/2.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/3.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/3.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/4.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/4.png"}/ 
                 -# .main-cta__btn
                 -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
                 -#     Todos los proyectos
@@ -227,17 +235,21 @@
               .container
                 .main-portfolio__grid--branding
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/1.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/1.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/2.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/2.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/3.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/3.png"}/ 
                   .main-portfolio__item
-                    .main-portfolio__img 
-                      %img{ :src => "assets/img/4.png"}/ 
+                    %a{ :href=>"#", :target=>"_blank"}
+                      .main-portfolio__img 
+                        %img{ :src => "assets/img/4.png"}/ 
                 -# .main-cta__btn
                 -#   %a.btn_custom.btn--large.btn--filled{ :href=>""}
                 -#     Todos los proyectos
@@ -443,15 +455,15 @@
             .main-footer__info
               %ul.main-contact__ul      
                 %li
-                  %a.main-contact__link{ href: 'mailto:mtello@contactmarketing.cl' }
+                  %a.main-contact__link{ href: 'mailto:mtello@contactmarketing.cl', :target=>"_blank" }
                     %i.fa.fa-envelope
                     %p mtello@contactmarketing.cl
                 %li
-                  %a.main-contact__link{ href: '' }
+                  %a.main-contact__link{ href: '' ,:target=>"_blank" }
                     %i.fa.fa-location-arrow
                     %p Avenida apoquindo 6410, oficina 605, Las Condes  
                 %li
-                  %a.main-contact__link{ href: 'tel:56933985125' }
+                  %a.main-contact__link{ href: 'tel:56933985125', :target=>"_blank" }
                     %i.fa.fa-phone
                     %p +569 3398 5125
               -# %ul
