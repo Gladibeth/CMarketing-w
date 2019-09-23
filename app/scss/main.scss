@@ -1735,6 +1735,10 @@ form {
   top: 45%;
   position: absolute;
   z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-1--right {
@@ -1743,6 +1747,10 @@ form {
   top: 60%;
   position: absolute;
   z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-5 {
@@ -1751,6 +1759,10 @@ form {
   top: 23%;
   position: absolute;
   z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-6 {
@@ -1759,6 +1771,10 @@ form {
   top: 15%;
   position: absolute;
   z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-4 {
@@ -1768,6 +1784,10 @@ form {
   position: absolute;
   z-index: 2;
   transform: rotateZ(-25deg);
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-4--left {
@@ -1777,6 +1797,10 @@ form {
   position: absolute;
   z-index: 2;
   transform: rotateZ(170deg);
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .particle-7 {
@@ -1785,6 +1809,10 @@ form {
   top: 4%;
   position: absolute;
   z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 label {

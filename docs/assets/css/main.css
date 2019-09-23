@@ -2301,12 +2301,24 @@ form {
   z-index: 2;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-1 {
+    display: none;
+  }
+}
+
 .particle-1--right {
   width: 5rem;
   left: 97%;
   top: 60%;
   position: absolute;
   z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-1--right {
+    display: none;
+  }
 }
 
 .particle-5 {
@@ -2317,12 +2329,24 @@ form {
   z-index: 2;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-5 {
+    display: none;
+  }
+}
+
 .particle-6 {
   width: 5rem;
   left: 80%;
   top: 15%;
   position: absolute;
   z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-6 {
+    display: none;
+  }
 }
 
 .particle-4 {
@@ -2334,6 +2358,12 @@ form {
   transform: rotateZ(-25deg);
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-4 {
+    display: none;
+  }
+}
+
 .particle-4--left {
   width: 21rem;
   left: -13%;
@@ -2343,12 +2373,24 @@ form {
   transform: rotateZ(170deg);
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-4--left {
+    display: none;
+  }
+}
+
 .particle-7 {
   width: 5rem;
   left: 4%;
   top: 4%;
   position: absolute;
   z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-7 {
+    display: none;
+  }
 }
 
 label {
