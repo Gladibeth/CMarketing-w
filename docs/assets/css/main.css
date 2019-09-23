@@ -2345,6 +2345,20 @@ form {
   }
 }
 
+.particle-6__cta {
+  width: 5rem;
+  left: 22%;
+  top: 65%;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-6__cta {
+    display: none;
+  }
+}
+
 .particle-6 {
   width: 5rem;
   left: 80%;
@@ -2399,6 +2413,20 @@ form {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .particle-7 {
+    display: none;
+  }
+}
+
+.particle-7__cta {
+  width: 5rem;
+  left: 61%;
+  top: 15%;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .particle-7__cta {
     display: none;
   }
 }

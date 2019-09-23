@@ -1773,6 +1773,18 @@ form {
   }
 }
 
+.particle-6__cta {
+  width: 5rem;
+  left: 22%;
+  top: 65%;
+  position: absolute;
+  z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
 .particle-6 {
   width: 5rem;
   left: 80%;
@@ -1815,6 +1827,18 @@ form {
   width: 5rem;
   left: 4%;
   top: 4%;
+  position: absolute;
+  z-index: 2;
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.particle-7__cta {
+  width: 5rem;
+  left: 61%;
+  top: 15%;
   position: absolute;
   z-index: 2;
 
